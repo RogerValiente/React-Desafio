@@ -14,6 +14,7 @@ const listaProductos = [
     imagen: torta,
     nombre: "Torta De la Casa",
     descripcion: " Una delicia de la casa.",
+    receta: " Agua huevos, leche.",
     precio: "20000",
   },
 
