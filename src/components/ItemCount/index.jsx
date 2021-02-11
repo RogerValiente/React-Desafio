@@ -22,20 +22,20 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   return (
     <div>
       <button
-        className={`btn btn-primary ${count === 1 ? "disabled" : ""}`}
+        className={`btn btn-dark ${count === 1 ? "disabled" : ""}`}
         onClick={() => restarProd(count - 1)}
       >
         -
       </button>
       <p className="d-inline-flex p-3 font-weight-bold">{count}</p>
       <button
-        className={`btn btn-primary ${count === stock ? "disabled" : ""}`}
+        className={`btn btn-dark ${count === stock ? "disabled" : ""}`}
         onClick={() => sumarProd(count + 1)}
       >
         +
       </button>
       <div>
-        <button className="boton btn btn-primary" onClick={onAdd}>
+        <button className="boton btn btn-dark" onClick={onAdd}>
           Agregar al carrito
         </button>
       </div>

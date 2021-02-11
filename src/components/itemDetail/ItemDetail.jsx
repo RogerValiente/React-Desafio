@@ -5,7 +5,7 @@ const ItemDetail = ({ producto }) => {
   const onAdd = () => alert("Se agrego el producto al carrito");
   return (
     <div style={{ width: "60rem" }}>
-      <div className="card  bg-dark">
+      <div className="card  bg-danger">
         <div className="card-body">
           <img
             class="card-img-top"
@@ -30,7 +30,23 @@ const ItemDetail = ({ producto }) => {
           <p className="font-weight-bold text-white">
             Precio: {producto.precio}
           </p>
-          <ItemCount stock={5} initial={1} onAdd={onAdd} />
+          <p className="font-weight-bold text-white">Stock: {producto.stock}</p>
+          <div>
+            <h3 className="card-title text-center text-white">
+              CAJA MAS DETALLE
+            </h3>
+            <img
+              class="card-img-top"
+              style={{ borderRadius: "7px" }}
+              src={producto.detalle}
+              width="320"
+              height="400"
+              alt="Pasteleria"
+            />
+          </div>
+          <div className="card-body">
+            <ItemCount stock={5} initial={1} onAdd={onAdd} />
+          </div>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ const Item = ({ producto, clickOnItem }) => {
         <div></div>
         <p className="font-weight-bold texto">Precio: {producto.precio}</p>
         <button
-          className="botonProd btn btn-primary"
+          className="botonProd btn btn-dark"
           onClick={() => clickOnItem(producto.id)}
           key={producto.id}
         >

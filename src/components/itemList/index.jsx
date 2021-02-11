@@ -6,7 +6,12 @@ const ItemList = ({ productos, clickOnCard }) => {
     <div>
       <div>
         {productos && productos.length < 2 && (
-          <button onClick={() => clickOnCard("todos")}>Volver</button>
+          <button
+            className="boton btn btn-dark"
+            onClick={() => clickOnCard("todos")}
+          >
+            Volver
+          </button>
         )}
       </div>
 
