@@ -14,15 +14,22 @@ const listaProductos = [
     imagen: torta,
     nombre: "Torta De la Casa",
     descripcion: " Una delicia de la casa.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
+
     precio: "20000",
+    stock: "5",
   },
 
   {
     id: "2",
     imagen: tortaDeshidratada,
-    nombre: "Torta Deshidratada",
+    nombre: "Torta Rellena",
     descripcion: " Torta rellena de arequipe.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
     precio: "25000",
+    stock: "5",
   },
 
   {
@@ -30,7 +37,10 @@ const listaProductos = [
     imagen: TortaFrutos,
     nombre: "Torta Frutos",
     descripcion: " Torta rellena de sabores.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
     precio: "25000",
+    stock: "5",
   },
 
   {
@@ -38,7 +48,10 @@ const listaProductos = [
     imagen: charlotte,
     nombre: "Charlotte",
     descripcion: " Torta fria con frutos rojos.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
     precio: "15000",
+    stock: "5",
   },
 
   {
@@ -46,7 +59,10 @@ const listaProductos = [
     imagen: cupcakes,
     nombre: "Cupcakes",
     descripcion: " Una delicia de la casa.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
     precio: "12000",
+    stock: "5",
   },
 
   {
@@ -54,7 +70,10 @@ const listaProductos = [
     imagen: pavlova,
     nombre: "Pavlova",
     descripcion: " Especial para cada ocasión.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
     precio: "10000",
+    stock: "5",
   },
 
   {
@@ -62,15 +81,21 @@ const listaProductos = [
     imagen: detalles,
     nombre: "Detalles para Ellos",
     descripcion: " Especial para cada ocasión.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
     precio: "15000",
+    stock: "5",
   },
 
   {
     id: "8",
     imagen: galletasPolvorosas,
-    nombre: "Galletas Polvorosas",
+    nombre: "Galleta Polvorosa",
     descripcion: " Especial para cada ocasión.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
     precio: "10000",
+    stock: "5",
   },
 
   {
@@ -78,7 +103,10 @@ const listaProductos = [
     imagen: galletasTemáticas,
     nombre: "Galletas Temáticas",
     descripcion: " Se adaptan para tus eventos.",
+    ingredientes:
+      "Para la torta / tarta, 226 gramos (1 taza) de mantequilla sin sal, 400 gramos (2 tazas) de azúcar, 4 huevos etc.",
     precio: "30000",
+    stock: "5",
   },
 ];
 

@@ -27,16 +27,18 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       >
         -
       </button>
-      <p className="d-inline-flex p-3">{count}</p>
+      <p className="d-inline-flex p-3 font-weight-bold">{count}</p>
       <button
         className={`btn btn-primary ${count === stock ? "disabled" : ""}`}
         onClick={() => sumarProd(count + 1)}
       >
         +
       </button>
-      <button className="boton btn btn-primary" onClick={onAdd}>
-        Agregar al carrito
-      </button>
+      <div>
+        <button className="boton btn btn-primary" onClick={onAdd}>
+          Agregar al carrito
+        </button>
+      </div>
     </div>
   );
 };

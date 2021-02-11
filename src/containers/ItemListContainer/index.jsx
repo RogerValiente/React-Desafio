@@ -5,6 +5,14 @@ import ItemList from "../../components/itemList/index";
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
 
+  const filtrarProductosPorId = (id) => {
+    if (id === "todos") {
+      setProductos(listaProductos);
+      return;
+    }
+    return setProductos(productos.filter((p) => p.id === id));
+  };
+
   useEffect(() => {
     const myPromise = new Promise((resolve, reject) => {
       setTimeout(() => resolve(listaProductos), 2000);
@@ -14,8 +22,10 @@ const ItemListContainer = () => {
   }, []);
 
   return (
-    <div className="container card-columns">
-      <ItemList productos={productos} />
+    <div className="container">
+      <div className="card-columns">
+        <ItemList productos={productos} clickOnCard={filtrarProductosPorId} />
+      </div>
     </div>
   );
 };
